@@ -35,7 +35,7 @@
 }
 
 .btn-left i::before{
-    content: url('./icons/vector_sinistra.png');
+    content: url('../icons/vector_sinistra.png');
     display:flex;
     justify-content: center;
     align-items:center;
@@ -44,7 +44,7 @@
 .btn-right i::before
 {
     align-items:center;
-    content: url('./icons/vector_destra.png');
+    content: url('../icons/vector_destra.png');
     display:flex;
     justify-content: center;
     align-items:center;
