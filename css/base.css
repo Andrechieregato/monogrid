@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Ortica";
+    src: url("./fonts/Ortica-Bold.woff") format("woff"),
+         url("./fonts/Ortica-Bold.woff2") format("woff2"),
+         url("./fonts/Ortica-Light.woff") format("woff"),
+         url("./fonts/Ortica-Light.woff2") format("woff2");
+  }
+
+  body
+  {
+    background-color: #ffffe6;
+  }
+
+  h1,h2,h3,h4,h5,h6,p{
+    font-family: "Ortica";
+  }
+
+  

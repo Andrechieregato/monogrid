@@ -1,8 +1,8 @@
+import {moveLeft} from './moveLeft.js';
+import {moveRight} from './moveRight.js';
 const arrow = document.querySelectorAll("[data-arrow]");
-const scroll = document.querySelectorAll("[data-scroll]");
 let images = [...document.querySelectorAll("img")]; // Ho messo le mie imagine in una lista.
-let galleryContainer = document.querySelector(".gallery-container");
-let hashLength = 0;
+
 let j = 16;
 for(let i = 0; i < images.length; i++)
 {
@@ -35,8 +35,6 @@ images.forEach((image) =>
         
     })
 })
-
-
 
 //      Scroll Event     //
 let galleryScroll = document.querySelector(".gallery-scroll");
@@ -117,27 +115,6 @@ function nextPhoto(operacao)
 //    }
 //}
 //hashChange();
-function moveLeft()
-    {
-        let galleryContainer = document.querySelector(".gallery-container");
-        let contentContainer = document.querySelector(".container");
-        const firstChildImage = galleryContainer.children[0];
-        const firstChildContent = contentContainer.children[0];
-        galleryContainer.appendChild(firstChildImage); 
-        contentContainer.appendChild(firstChildContent); 
-    }
-
-function moveRight()
-    {
-        let galleryContainer = document.querySelector(".gallery-container");
-        let contentContainer = document.querySelector(".container");
-        const firstChildImage = galleryContainer.children[0];
-        const firstChildContent = contentContainer.children[0];
-        var lastChildImage = galleryContainer.children[galleryContainer.children.length - 1];
-        galleryContainer.insertBefore(lastChildImage, firstChildImage);
-        var lastChildContent = contentContainer.children[contentContainer.children.length -1];
-        contentContainer.insertBefore(lastChildContent, firstChildContent);
-    }
 
 
 

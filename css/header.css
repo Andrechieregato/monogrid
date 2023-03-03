@@ -1,0 +1,20 @@
+
+.header{
+    display:flex;
+    justify-content: flex-start;
+    height:80px;
+}
+
+.header-title
+{
+    font-family: 'Ortica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 100%;
+    color: #0E0F11;
+    opacity: 0.6;
+    transform: rotate(-2deg);
+    padding-top: 25.8px;
+    padding-left: 34.01px;
+}
